@@ -1,0 +1,47 @@
+<HTML>
+    <HEAD>
+    <title>My Expense Tracker</title>
+    <link rel = "stylesheet" type = "text/css" href = "expenseStyle.css">
+    <script src = "expenseTracker.js"></script>
+    </HEAD>
+    <body>
+        <h1>My Expense Tracking Machine</h1>
+        <div class = "expenseSection">
+        <form action = "square()" id = expenseform>
+            <p maxlength = 50>Expense Name</p>
+            <input type = "text" class="inputbox" name = "expenseName" id = "expenseName" maxlength = 50/>
+            <p maxlength = 50>Expense Amount</p>
+            <input type = "text" class="inputbox" name = "expenseAmount" id = "expenseAmount" maxlength = 50/>
+            <p>Category</p>
+            <select>
+                <option value = "Home">Home</option>
+                <option value = "Food">Food</option>
+                <option value = "Fuel">Fuel</option>
+                <option value = "Bills">Bills</option>
+                <option value = "Shopping">Shopping</option>
+                <option value = "Investment">Investment</option>
+                <option value = "Travel">Travel</option>
+                <option value = "Misc">Misc</option>
+            </select>
+            <p>Comment</p>
+            <textarea  rows="3" cols="20" maxlength = 50></textarea>
+            <button class = "savebutton" id = "savebutton" onclick = "saveForm()" >Save</button>
+            <button class = "savebutton" id = "savebutton" onclick = "resetForm();" >clear</button>
+        </form>
+        </div>
+
+        <div class = "incomeSection"><p>Enter Income</p>
+            <input type = "text" class="inputbox" name = "incomeName" id = "incomeName" maxlength = 50/><br><br><br>
+            <p>Home:</p>             <p id ="homeTotal"></p>
+            <p>Food:</p>             <p id ="foodTotal"></p>
+            <p>Fuel:</p>             <p id ="feulTotal"></p>
+            <p>Bills:</p>            <p id ="billsTotal"></p>
+            <p>Shopping:</p>         <p id ="shoppingTotal"></p>
+            <p>Investment:</p>       <p id ="investmentTotal"></p>
+            <p>Travel:</p>           <p id ="travelTotal"></p>
+            <p>Misc:</p>             <p id ="miscTotal"></p><br><br>
+            <p>Total Spent:</p>      <p id ="totalSpent"></p>
+            <p>Amount Saved:</p>      <p id ="amountSaved"></p>
+        </div>
+    </body>
+</HTML>
