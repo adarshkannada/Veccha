@@ -7,7 +7,7 @@
     <body>
         <h1>My Expense Tracking Machine</h1>
         <div class = "expenseSection">
-        <form action = "square()" id = expenseform>
+        <form id = expenseform>
             <p maxlength = 50>Expense Name</p>
             <input type = "text" class="inputbox" name = "expenseName" id = "expenseName" maxlength = 50/>
             <p maxlength = 50>Expense Amount</p>
@@ -22,11 +22,13 @@
                 <option value = "Investment">Investment</option>
                 <option value = "Travel">Travel</option>
                 <option value = "Misc">Misc</option>
-            </select>
+            </select><br>
+            <p>Date</p>
+            <input type="date" name="date" class="inputbox" id = "expenseDate"><br><br>
             <p>Comment</p>
-            <textarea  rows="3" cols="20" maxlength = 50></textarea>
+            <textarea  rows="3" cols="20" maxlength = 50></textarea><br><br>
             <button class = "savebutton" id = "savebutton" onclick = "saveForm()" >Save</button>
-            <button class = "savebutton" id = "savebutton" onclick = "resetForm();" >clear</button>
+            <button class = "savebutton" id = "clearbutton" onclick = "resetForm()" >clear</button>
         </form>
         </div>
 
@@ -41,7 +43,7 @@
             <p>Travel:</p>           <p id ="travelTotal"></p>
             <p>Misc:</p>             <p id ="miscTotal"></p><br><br>
             <p>Total Spent:</p>      <p id ="totalSpent"></p>
-            <p>Amount Saved:</p>      <p id ="amountSaved"></p>
+            <p>Balance:</p>      <p id ="balance"></p>
         </div>
     </body>
 </HTML>

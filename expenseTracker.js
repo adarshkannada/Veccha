@@ -1,4 +1,4 @@
-function square(){
+function saveForm(){
     for(i = 1; i <= 10; i++){
         sq = i * i;
         document.write("The Square of " + i + " is " + sq + "<BR>")
@@ -6,5 +6,5 @@ function square(){
 }
 
 function resetForm(){
-        document.getElementById("savebutton").reset();
+        document.getElementById("expenseform").reset();
 }
