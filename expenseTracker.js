@@ -1,8 +1,12 @@
 function saveForm(){
-    for(i = 1; i <= 10; i++){
-        sq = i * i;
-        document.write("The Square of " + i + " is " + sq + "<BR>")
-    }
+
+    var expenseName = document.getElementById('expenseName').value;
+    var amount = document.getElementById('expenseAmount').value;
+    var  expenseCategory = document.getElementById('expenseCategory').value;
+    var date = document.getElementById('expenseDate').value;
+
+    alert(expenseName);
+    
 }
 
 function resetForm(){

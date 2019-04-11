@@ -6,6 +6,7 @@
     </HEAD>
     <body>
         <h1>My Expense Tracking Machine</h1>
+        <!--Add Expense Section-->
         <div class = "expenseSection">
         <form id = expenseform>
             <p maxlength = 50>Expense Name</p>
@@ -13,7 +14,7 @@
             <p maxlength = 50>Expense Amount</p>
             <input type = "text" class="inputbox" name = "expenseAmount" id = "expenseAmount" maxlength = 50/>
             <p>Category</p>
-            <select>
+            <select id = 'expenseCategory'>
                 <option value = "Home">Home</option>
                 <option value = "Food">Food</option>
                 <option value = "Fuel">Fuel</option>
@@ -31,7 +32,7 @@
             <button class = "savebutton" id = "clearbutton" onclick = "resetForm()" >clear</button>
         </form>
         </div>
-
+        <!--Add Income and Report Section-->
         <div class = "incomeSection"><p>Enter Income</p>
             <input type = "text" class="inputbox" name = "incomeName" id = "incomeName" maxlength = 50/><br><br>
             <p>Home:</p>             <p id ="homeTotal"></p>
