@@ -5,8 +5,9 @@ function saveForm(){
     var  expenseCategory = document.getElementById('expenseCategory').value;
     var date = document.getElementById('expenseDate').value;
 
-    alert(expenseName);
-    
+    alert(amount);
+    document.getElementById('homeTotal').innerHTML = amount;
+
 }
 
 function resetForm(){
