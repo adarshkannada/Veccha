@@ -1,5 +1,5 @@
 body {
-  background-color: #26a65b;
+  background-color: #f1e7fe;
 }
 
 h1 {
@@ -72,12 +72,18 @@ body{
 
   .expenseSection
  {
-    width: 60%;
+    width: 45%;
     float: left;
-    height: 100px;
+    height: 500px;
+    border-style: solid;
+    margin-right: 05px;
+    padding-left: 05px;
   }
   .incomeSection{
-    width: 40%;
-    float: right;
-    height: 100px;
+    width: 45%;
+    float: left;
+    height: 500px;
+    border-style: solid;
+    margin-left: 05px;
+    padding-left: 05px;
   }
